@@ -10,25 +10,25 @@ export default class Home extends Component {
     }
     const stats = [
       {
-        icon: 'fa-solid fa-user-tie',
-        number: '800,000',
-        label: 'Employers Worldwide'
+        icon: "fa-solid fa-user-tie",
+        number: "800,000",
+        label: "Employers Worldwide",
       },
       {
-        icon: 'fa-solid fa-file-invoice-dollar',
-        number: '1 Million',
-        label: 'Paid Invoices'
+        icon: "fa-solid fa-file-invoice-dollar",
+        number: "1 Million",
+        label: "Paid Invoices",
       },
       {
-        icon: 'fa-solid fa-hand-holding-dollar',
-        number: '$250 Million',
-        label: 'Paid to Freelancers'
+        icon: "fa-solid fa-hand-holding-dollar",
+        number: "$250 Million",
+        label: "Paid to Freelancers",
       },
       {
-        icon: 'fa-regular fa-face-smile-beam',
-        number: '99%',
-        label: 'Customer Satisfaction Rate'
-      }
+        icon: "fa-regular fa-face-smile-beam",
+        number: "99%",
+        label: "Customer Satisfaction Rate",
+      },
     ];
     return (
       <Fragment>
@@ -57,7 +57,7 @@ export default class Home extends Component {
                 {/* gorge */}
                 <a
                   style={{ color: "white", textDecoration: "none" }}
-                  href="https://about-us21.netlify.app/"
+                  href="https://regist-tech.netlify.app/"
                 >
                   Start Freelancing
                   <i className="fa-solid fa-arrow-right ps-3 py-1"></i>
@@ -66,69 +66,31 @@ export default class Home extends Component {
             </div>
           </section>
 
-          {/* <section className={`container d-flex align-items-center justify-content-center pt-5 ${styles.container1}`}>
-            <div className="row">
-              
-              <div className="col-lg-2 col-md-2 col-sm-6 d-flex justify-content-start">
-                <i className="fa-solid fa-user-tie  text-center mt-4 pe-1 fs-1"></i>
-                <div className="mt-3">
-                  <h4>800,000</h4>
-                  <p>Employers Worldwide</p>
-                </div>
-              </div>
-
-              <div className="col-lg-2  col-md-2 col-sm-6 d-flex justify-content-start">
-                <i className="fa-solid fa-file-invoice-dollar text-center mt-4 pe-1 fs-1"></i>
-                <div className="mt-3">
-                  <h4>1 Million</h4>
-                  <p>Paid Invoices</p>
-                </div>
-              </div>
-
-              <div className="col-lg-2 col-md-2 col-sm-6 d-flex justify-content-start ">
-                <i className="fa-solid fa-hand-holding-dollar text-center mt-4 pe-1 fs-1"></i>
-                <div className="mt-3">
-                  <h4>$250 Million</h4>
-                  <p>Paid to Freelancers</p>
-                </div>
-              </div>
-
-              <div className="col-lg-2 col-md-2 col-sm-6 d-flex justify-content-start ">
-                <i className="fa-regular fa-face-smile-beam text-center mt-4 pe-1 fs-1"></i>
-                <div className="mt-3">
-                  <h4>99%</h4>
-                  <p>Customer Satisfaction Rate </p>
-                </div>
-              </div>
-            </div>
-          </section> */}
-
           <section className={`container-fluid py-5 ${styles.container1}`}>
-      <div className="container">
-        <div className="row g-4 justify-content-center">
-          {stats.map((stat, index) => (
-            <div 
-              key={index} 
-              className="col-xl-3 col-lg-3 col-md-6 col-sm-12"
-            >
-              <div className="d-flex align-items-center">
-                <div className="me-3">
-                  <i 
-                    className={`${stat.icon} text-center fs-1`}
-                    style={{ minWidth: '60px' }}
-                  ></i>
-                </div>
-                <div>
-                  <h4 className="mb-1">{stat.number}</h4>
-                  <p className="text-muted mb-0">{stat.label}</p>
-                </div>
+            <div className="container">
+              <div className="row g-4 justify-content-center">
+                {stats.map((stat, index) => (
+                  <div
+                    key={index}
+                    className="col-xl-3 col-lg-3 col-md-6 col-sm-12"
+                  >
+                    <div className="d-flex align-items-center">
+                      <div className="me-3">
+                        <i
+                          className={`${stat.icon} text-center fs-1`}
+                          style={{ minWidth: "60px" }}
+                        ></i>
+                      </div>
+                      <div>
+                        <h4 className="mb-1">{stat.number}</h4>
+                        <p className="text-muted mb-0">{stat.label}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-          ))}
-        </div>
-      </div>
           </section>
-
 
           <section id="about" className={`${styles.container2}`}>
             <div className="row">
@@ -308,83 +270,6 @@ export default class Home extends Component {
             </div>
           </div>
 
-          {/* <div id="beadiv" className={`container m-5 ${styles.container9}`}>
-  <div className={`row m-5 ${styles.row}`}>
-    <div className={`col-lg-6 col-md-6 col-sm-12 ${styles.muliimage}`}>
-      <img
-        className={`${styles.img1}`}
-        src={img}
-        alt=""
-        style={{ width: '100%', height: 'auto' }} // Responsive image sizing
-      />
-      <img
-        className={`${styles.img2}`}
-        src={img}
-        alt=""
-        style={{ width: '100%', height: 'auto', position: 'absolute', top: '0', left: '0', zIndex: 1 }} // Adjust positioning
-      />
-      <img
-        className={`${styles.img3}`}
-        src={img}
-        alt=""
-        style={{ width: '100%', height: 'auto', position: 'absolute', top: '0', left: '0', zIndex: 0 }} // Adjust positioning
-      />
-    </div>
-    <div className={`col-lg-6 col-md-6 col-sm-12 ${styles.text}`}>
-      <h1>Start Your Journey as a Developer With Us</h1>
-      <h6>
-        Sign Up now <i className="fa-solid fa-arrow-down"></i>
-      </h6>
-      <button type="button" className="btn btn-warning ms-5 px-3 mt-3">
-        <a href="https://regist-tech.netlify.app/">
-          <i className="fa-regular fa-heart" style={{ color: "#ffff" }}></i>
-        </a>
-      </button>
-    </div>
-  </div>
-          </div> */}
-          {/* <div id="beadiv" className={`container9`}>
-            <div className={`row m-5`}>
-              Images Section
-              <div className={`col-lg-6 col-md-6 col-sm-12 muliimage`}>
-                <img
-                  className={`ps-5 img1`}
-                  src={img} // Replace with your actual img import
-                  alt="Developer Journey"
-                />
-                <img
-                  className={`ps-3 pt-4 img2`}
-                  src={img} // Replace with your actual img import
-                  alt="Developer Journey"
-                />
-                <img
-                  className={`pt-5 img3`}
-                  src={img} // Replace with your actual img import
-                  alt="Developer Journey"
-                />
-              </div>
-
-              Text Section
-              <div className={`col-lg-6 col-md-6 col-sm-12 text`}>
-                <h1>Start Your Journey as a Developer With Us</h1>
-                <h6>
-                  Sign Up now <i className="fa-solid fa-arrow-down"></i>
-                </h6>
-                <button
-                  type="button"
-                  className="btn btn-warning ms-5 px-3 mt-3"
-                >
-                  <a href="https://regist-tech.netlify.app/">
-                    <i
-                      className="fa-regular fa-heart"
-                      style={{ color: "#ffff" }}
-                    ></i>
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div> */}
-
           {/* end of be a developer section */}
 
           {/* /* ////////////////////////////////////////////////////////////////////////////////////////// */}
@@ -433,195 +318,8 @@ export default class Home extends Component {
             </div>
           </section>
 
-          {/* <section className={`container ${styles.container6}`}>
-            <div className="container  mt-5">
-              <div className="row">
-                <div className="col-lg-5 pt-5 mt-5">
-                  <img
-                    src="https://www.f-cdn.com/assets/main/en/assets/home/global-talent/global-talent-cards-ld.png"
-                    alt=""
-                    width={500}
-                  />
-                </div>
-                <div className="col-lg-1"></div>
-                <div className="col-lg-6">
-                  <div className="col-lg-12 pb-4">
-                    <h1>Tap into a</h1>
-                    <span>global talent network</span>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-6">
-                      <h3>Post your job</h3>
-                      <p>
-                        It's free and easy! Get lots of competitive bids that
-                        suit your budget in minutes. Start making your dreams
-                        reality.
-                      </p>
-                    </div>
-                    <div className="col-lg-6">
-                      <h3>Choose freelancers</h3>
-                      <p>
-                        No job is too big or complex. We've got freelancers for
-                        jobs of any size or budget, across 2700+ skills. Let our
-                        talent bring your ideas to life
-                      </p>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-6">
-                      <h3>Pay safely</h3>
-                      <p>
-                        Only pay for work when you are 100% satisfied with the
-                        outcome. Our milestone payment system protects you every
-                        step of the way
-                      </p>
-                    </div>
-                    <div className="col-lg-6">
-                      <h3>We're here to help</h3>
-                      <p>
-                        Your time is precious. Let our team of expert recruiters
-                        and co-pilots save you time finding talent, even
-                        managing your job if needed.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section> */}
           {/* ---------------------------------------------------------------------------- */}
-          {/* <section id="our spicialities" className={`${styles.container7}`}>
-            <div className="container pb-5 mb-5">
-              <div className="row">
-                <div className="col-lg-8 col-md-8">
-                  <div className="row">
-                    <div className="col-lg-6 col-md-6">
-                      <img
-                        src="https://www.sphereinc.com/wp-content/uploads/2022/05/cloud_cybersecurity.webp"
-                        alt=""
-                        width={300}
-                        height={180}
-                      />
-                    </div>
-                    <div className="col-lg-6 col-md-6">
-                      <img
-                        src="https://bombaychamber.com/wp-content/uploads/2024/04/Online-Blockchain-Cryptocurrency-Certification-Course-scaled-1.jpg"
-                        alt=""
-                        width={300}
-                        height={180}
-                      />
-                    </div>
 
-                    <div className="row">
-                      <div className="col-lg-12 py-3">
-                        <img
-                          src="https://media.licdn.com/dms/image/D4D12AQHcNSzLU7jiGA/article-cover_image-shrink_720_1280/0/1715785719025?e=2147483647&v=beta&t=8u6gqTJqGsPUNhgAAjxbFm9cdazu8EUYtU-ybD_z3gU"
-                          alt=""
-                          width={680}
-                          height={130}
-                        />
-                      </div>
-                    </div>
-
-                    <div className="row">
-                      <div className="col-lg-6">
-                        <img
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhUkqpOsgKKtlelRm8RvRZs3-4Xi1DMshFiA&s"
-                          alt=""
-                          width={300}
-                          height={180}
-                        />
-                      </div>
-                      <div className="col-lg-6">
-                        <img
-                          src="https://www.newperspectivestudio.co.za/wp-content/uploads/2024/09/What-is-website-maintenance-and-Why-it-is-important.jpg"
-                          alt=""
-                          width={300}
-                          height={180}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-2">
-                  <img
-                    src="https://novawebbusiness.com/wp-content/uploads/2024/03/Web-Development.webp"
-                    alt=""
-                    width={370}
-                    height={550}
-                  />
-                </div>
-              </div>
-            </div>
-          </section> */}
-          {/* <section id="our-specialties" className={`${styles.container7}`}>
-            <div className="container pb-5 mb-5">
-              <div className="row gy-4">
-                {" "}
-                Added gy-4 for vertical spacing between rows on mobile
-                <div className="col-lg-8 col-md-12">
-                  <div className="row g-4">
-                    {" "}
-                    Added g-4 for consistent grid spacing
-                    <div className="col-lg-6 col-md-6 col-sm-12">
-                      <div className="img-wrapper">
-                        <img
-                          src="https://www.sphereinc.com/wp-content/uploads/2022/05/cloud_cybersecurity.webp"
-                          alt="Cloud Cybersecurity"
-                          className="img-fluid" // Added img-fluid for responsive images
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-6 col-md-6 col-sm-12">
-                      <div className="img-wrapper">
-                        <img
-                          src="https://bombaychamber.com/wp-content/uploads/2024/04/Online-Blockchain-Cryptocurrency-Certification-Course-scaled-1.jpg"
-                          alt="Blockchain"
-                          className="img-fluid"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-12 py-3">
-                      <div className="img-wrapper">
-                        <img
-                          src="https://media.licdn.com/dms/image/D4D12AQHcNSzLU7jiGA/article-cover_image-shrink_720_1280/0/1715785719025?e=2147483647&v=beta&t=8u6gqTJqGsPUNhgAAjxbFm9cdazu8EUYtU-ybD_z3gU"
-                          alt="Technology"
-                          className="img-fluid w-100" // Added w-100 to ensure full width
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-6 col-md-6 col-sm-12">
-                      <div className="img-wrapper">
-                        <img
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhUkqpOsgKKtlelRm8RvRZs3-4Xi1DMshFiA&s"
-                          alt="Development"
-                          className="img-fluid "
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-6 col-md-6 col-sm-12">
-                      <div className="img-wrapper">
-                        <img
-                          src="https://www.newperspectivestudio.co.za/wp-content/uploads/2024/09/What-is-website-maintenance-and-Why-it-is-important.jpg"
-                          alt="Maintenance"
-                          className="img-fluid "
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-12 ">
-                  <div className="img-wrapper h-100">
-                    <img
-                      src="https://novawebbusiness.com/wp-content/uploads/2024/03/Web-Development.webp"
-                      alt="Web Development"
-                      className="img-fluid w-100 h-100 "
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section> */}
           <section id="ourspecialties" className={`pt-4 ${styles.container7}`}>
             <div className="container pb-5 mb-5">
               <div className="row g-4">
@@ -686,6 +384,7 @@ export default class Home extends Component {
               </div>
             </div>
           </section>
+
           {/* ---------------------------------------------------------------------------- */}
           <section>
             <div className={`${styles.container8}`}>

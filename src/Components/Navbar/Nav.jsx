@@ -38,14 +38,14 @@ const Navbar = () => {
             >
               <div className={`navbar-nav ms-auto ${styles.navbarnav}`}>
                 <a 
-                  href="/home" 
+                  href="#home" 
                   target="_self"
                   className={`nav-link active m-2 ${styles.navlink}`}
                 >
                   Home
                 </a>
                 <a 
-                  href="https://about-us21.netlify.app/" 
+                  href="https://about-us-web-2k24.netlify.app/" 
                   className={`nav-link active m-2 ${styles.navlink}`}
                   target="_self"
                   rel="noopener noreferrer"
