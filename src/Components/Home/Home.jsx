@@ -109,14 +109,7 @@ export default class Home extends Component {
                         on their profiles.
                       </p>
                     </div>
-                    {/* <div className="col-lg-6">
-                      <h3>Fast bids</h3>
-                      <p>
-                        Get quick, no-obligation quotes from skilled
-                        freelancers. 80% of jobs receive bids within 60 seconds.
-                        Your idea is just moments from reality.
-                      </p>
-                    </div> */}
+                   
                   </div>
                   <div className="row">
                     <div className="col-lg-6">
@@ -127,14 +120,7 @@ export default class Home extends Component {
                         talent to get what you need done.
                       </p>
                     </div>
-                    {/* <div className="col-lg-6">
-                      <h3>Be in control</h3>
-                      <p>
-                        Stay in the loop while on the move. Chat with your
-                        freelancers and get real time updates with our mobile
-                        app. Anytime, anywhere.
-                      </p>
-                    </div> */}
+                   
                   </div>
                 </div>
               </div>
@@ -148,73 +134,6 @@ export default class Home extends Component {
               </div>
             </div>
           </section>
-
-          {/* <section id="traks" className={`${styles.container5}`}>
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-4">
-                  <img
-                    src="https://www.keystonesubic.com/storage/2023/03/web-devlopment.jpg"
-                    alt=""
-                    width={350}
-                    height={595}
-                  />
-                </div>
-                <div className="col-lg-6">
-                  <div className="row">
-                    <div className="col-lg-7 col-md-7 col-sm-7 m-2">
-                      <img
-                        src="https://riseuplabs.com/wp-content/uploads/2021/07/mobile-application-development-guidelines-riseuplabs.jpg"
-                        alt=""
-                        width={290}
-                        height={180}
-                      />
-                    </div>
-
-                    <div className="col-lg-4 col-md-4 col-sm-4  ">
-                      <img
-                        src="https://www.velvetech.com/wp-content/uploads/2019/08/15-software-development-methodologies-fb.jpg"
-                        alt=""
-                        width={375}
-                        height={180}
-                      />
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-12 col-md-12 col-sm-12 py-3 m-2">
-                      <img
-                        src="https://www.brilworks.com/_next/image/?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F219851%2F550x283%2F4df17cf388%2Fevolution-of-generative-ai.webp&w=3840&q=30"
-                        width={750}
-                        height={200}
-                        alt=""
-                      />
-                    </div>
-                  </div>
-
-                  <div className="row">
-                    <div className="col-lg-7 col-md-7 col-sm-7 m-2">
-                      <img
-                        src="https://media.b2broker.com/app/uploads/2023/11/Overview-of-The-MetaTrader-4-Web-Platform.png"
-                        alt=""
-                        width={290}
-                        height={180}
-                      />
-                    </div>
-                    <div className="col-lg-4 col-md-4 col-sm-4 ">
-                      <img
-                        src="https://www.theknowledgeacademy.com/_files/images/Game_Development_Process_An_Overview.png"
-                        alt=""
-                        width={375}
-                        height={180}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section> */}
-
-          {/* //////////////////////////////////////////////////////////////////////////////////////////// */}
 
           <div className={`container text-center py-5 ${styles.container10}`}>
             <h1 className={`pt-5 ${styles.h1}`}>
@@ -416,17 +335,7 @@ export default class Home extends Component {
                       </div>
                     ))}
                   </div>
-                  {/* <div className="col-lg-6">
-        {aiDevelopmentItems.map((row, rowIndex) => (
-        <div className="row" key={`row-${rowIndex}`}>
-          {row.map((item, colIndex) => (
-            <div className="col-lg-4" key={`col-${rowIndex}-${colIndex}`}>
-                <h4>{item}</h4>
-            </div>
-          ))}
-        </div>
-        ))}
-                  </div> */}
+                  
                 </div>
               </div>
             </div>
